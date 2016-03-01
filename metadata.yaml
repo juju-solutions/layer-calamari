@@ -1,0 +1,15 @@
+name: calamari
+summary: Web interface for monitoring Ceph
+maintainers:
+ - Marco Ceppi <marco.ceppi@canonical.com>
+description: |
+  Calamari is a management and monitoring service for Ceph, exposing a high
+  level REST API.
+tags:
+  - storage
+provides:
+  website:
+    interface: http
+requires:
+  client:
+    interface: calamari
