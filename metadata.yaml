@@ -13,3 +13,8 @@ provides:
 requires:
   client:
     interface: calamari
+resources:
+  deb:
+    type: file
+    filename: calamari.deb
+    description: calamari debian package
