@@ -1,1 +1,6 @@
 includes: ['layer:basic', 'interface:calamari', 'interface:http']
+options:
+  basic:
+    use_venv: true
+    packages: ['python-apt', 'python3-apt']
+    include_system_packages: true

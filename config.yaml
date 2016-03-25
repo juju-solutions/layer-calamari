@@ -1,14 +1,27 @@
 options:
-  string-option:
+  install_sources:
+    description: charm-helpers standard listing of package install sources.
     type: string
-    default: "Default Value"
-    description: "A short description of the configuration option"
-  boolean-option:
-    type: boolean
-    default: False
-    description: "A short description of the configuration option"
-  int-option:
-    type: int
-    default: 9001
-    description: "A short description of the configuration option"
-
+    default: |
+        - "deb http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main"
+        - "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
+  install_keys:
+    description: |
+        charm-helpers standard listing of package install source signing keys,
+        corresponding to install_sources.
+    type: string
+    default: |
+        - 0E27C0A6
+        - ACCC4CF8
+  admin-username:
+    description:
+    type: string
+    default: ""
+  admin-password:
+    description:
+    type: string
+    default: ""
+  admin-email:
+    description:
+    type: string
+    default: ""
